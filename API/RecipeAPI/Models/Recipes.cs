@@ -20,7 +20,7 @@ namespace RecipeAPI.Models
 
         public override string ToString()
         {
-            return RecipeName + Difficulty + Duration;
+            return RecipeName + " " + Difficulty + " " + Duration;
         }
     }
 }

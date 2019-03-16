@@ -19,20 +19,6 @@ namespace RecipeAPI.Controllers
         {
             _context = context;
 
-            if (_context.Recipes.Count() == 0)
-            {
-                // Create a new TodoItem if collection is empty,
-                // which means you can't delete all TodoItems.
-                _context.Recipes.Add(new Recipes { Recipe_id = 1, RecipeName = "Lasagna", Difficulty = "Medium", Duration = 80 });
-                _context.SaveChanges();
-            }
-        }
-
-        // GET: api/Todo
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Recipes>>> GetRecipes()
-        {
-            return await _context.Recipes.ToListAsync();
         }
 
         [HttpGet("all")]

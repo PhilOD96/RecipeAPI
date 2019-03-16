@@ -5,5 +5,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>RecipeAPI</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>CA2RecipeAPI - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

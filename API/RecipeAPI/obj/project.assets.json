@@ -12206,11 +12206,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Phil\\source\\repos\\RecipeAPI\\RecipeAPI\\RecipeAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Phil\\Desktop\\EAD CA 2\\RecipeAPI\\API\\RecipeAPI\\RecipeAPI.csproj",
       "projectName": "RecipeAPI",
-      "projectPath": "C:\\Users\\Phil\\source\\repos\\RecipeAPI\\RecipeAPI\\RecipeAPI.csproj",
+      "projectPath": "C:\\Users\\Phil\\Desktop\\EAD CA 2\\RecipeAPI\\API\\RecipeAPI\\RecipeAPI.csproj",
       "packagesPath": "C:\\Users\\Phil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Phil\\source\\repos\\RecipeAPI\\RecipeAPI\\obj\\",
+      "outputPath": "C:\\Users\\Phil\\Desktop\\EAD CA 2\\RecipeAPI\\API\\RecipeAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
