@@ -3,10 +3,10 @@ package com.example.ca_bladerrunner;
 public class Recipes {
 
 
-    private int Recipe_id;
-    private String RecipeName;
-    private String Difficulty;
-    private double Duration;
+    public int Recipe_id;
+    public String RecipeName;
+    public String Difficulty;
+    public double Duration;
 
 
     public Recipes(int Recipe_id, String RecipeName,String Difficulty,double duration){
@@ -16,10 +16,18 @@ public class Recipes {
         this.Difficulty = Difficulty;
         this.Duration = duration;
     }
+    public Recipes(){}
 
     public String getRecipeName() {
         return RecipeName;
     }
+
+    public void setRN(String name){this.RecipeName = name;}
+    public void setID(int id ){this.Recipe_id = id;}
+    public void setDu(double d ){this.Duration = d;}
+    public void setDi(String di){this.Difficulty = di;}
+
+
 
 
     public int getRecipe_id(){

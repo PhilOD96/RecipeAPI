@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+
         //noinspection SimplifiableIfStatement
 
         return super.onOptionsItemSelected(item);
@@ -85,36 +86,24 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response)
                             {
-                                    String input = response;
-                                Gson gson = new Gson();
-                                Type type = new TypeToken<List<Recipes>>(){}.getType();
-                                 List<Recipes> recipesList = gson.fromJson(response, type);
 
+
+                                String input = response;
+                                Gson gson = new Gson();
+                                Recipes[] recipesArray = gson.fromJson(input, Recipes[].class);
+                                for (int i =0; i < recipesArray.length;i++){
+
+                                    Log.i("Recipe Details", recipesArray[i].getRecipe_id() + " " + recipesArray[i].getRecipeName() +" " + recipesArray[i].getDuration() + " " + recipesArray[i].getDiff() +"");
+                                }
+                                Type RecipeListType = new TypeToken<ArrayList<Recipes>>(){}.getType();
+                                List<Recipes> recipesList = gson.fromJson(input, RecipeListType);
                                 for(Recipes recipe:recipesList){
 
-                                    //recipesList.add((input,Recipes.class));
+                                   // Log.i("Recipe Details", recipe.getRecipe_id() + " " + recipe.getRecipeName() +" " + recipe.getDuration() + " " + recipe.getDiff() +"");
+                                    //recipesList.add(recipe);
+                                    outputTextView.setText(recipe.toString());
+
                                 }
-
-
-                                //Recipes r = new Gson().fromJson(response, Recipes.class);
-                                //Gson gson = new Gson();
-                                //Type type = new TypeToken<List<Recipes>>(){}.getType();
-                                //List<Recipes> recipesList = gson.fromJson(response, type);
-
-                                //outputTextView.setText(r.toString());
-                               // Log.d(TAG, "Displaying data" + r.toString());
-
-
-                                //Gson gson = new Gson();
-//                                Type type = new TypeToken<List<Recipes>>(){}.getType();
-//                                List<Recipes> recipesList = gson.fromJson(response, type);
-
-//                                for(Recipes recipe:recipesList){
-//                                   // Log.i("Recipe Details", recipe.getRecipe_id() + " " + recipe.getRecipeName() +" " + recipe.getDuration() + " " + recipe.getDiff() +"");
-//                                    recipesList.add(new Recipes(gson.fromJson(response, Recipes.class)));
-//                                    outputTextView.setText(recipesList.toString());
-//
-//                                }
 
 
 
