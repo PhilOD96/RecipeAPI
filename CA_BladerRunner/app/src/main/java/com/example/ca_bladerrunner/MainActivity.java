@@ -99,26 +99,13 @@ public class MainActivity extends AppCompatActivity {
                                 List<Recipes> recipesList = gson.fromJson(input, RecipeListType);
                                 for(Recipes recipe:recipesList){
 
-                                   // Log.i("Recipe Details", recipe.getRecipe_id() + " " + recipe.getRecipeName() +" " + recipe.getDuration() + " " + recipe.getDiff() +"");
-                                    //recipesList.add(recipe);
-                                    outputTextView.setText(recipe.toString());
+
+                                   outputTextView.setText(recipesList.toString());
 
                                 }
 
 
 
-//
-//                                ArrayList<Recipes>recipelist = new ArrayList<>();
-//                                // parse resulting string containing JSON to Greeting object
-//                                Recipes recipes = new Gson().fromJson(response, Recipes.class);
-//
-//
-//                                for(int i =0; i < recipelist.size();i++){
-//
-//                                    outputTextView.setText(recipelist.get(i).toString());
-//                                }
-//
-//                                Log.d(TAG, "Displaying data" + recipes.toString());
                             }
                         },
                         new Response.ErrorListener()
