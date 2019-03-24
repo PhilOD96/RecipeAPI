@@ -1,11 +1,15 @@
 package com.example.ca_bladerrunner;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -29,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
     // uri of RESTful service on Azure
     private String SERVICE_URI = "https://ca2recipeapi.azurewebsites.net/api/recipes/all";          // or https
     private String TAG = "Recipes";
+    private EditText mBookInput;
+    private TextView mTitleText;
+    private TextView mAuthorText;
 
 
     @Override
@@ -131,4 +138,5 @@ public class MainActivity extends AppCompatActivity {
             textView.setText(e2.toString());
         }
     }
+
 }
