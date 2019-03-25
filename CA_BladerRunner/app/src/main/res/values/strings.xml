@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">CA_BladeRunner</string>
-
-    <string name="instructions">Click Button to find all Recipes or enter a number between 1 and 4  </string>
-    <string name="button_text">Search Recipes</string>
-    <string name="input_hint">Recipe Title</string>
-    <string name="no_search_term">Please enter a search term</string>
-    <string name="no_results">No Results Found</string>
-</resources>
