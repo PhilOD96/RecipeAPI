@@ -21,7 +21,8 @@ namespace RecipeAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
             //Register the Swagger generator, defining one or more Swagger documents
             services.AddSwaggerGen(c =>
             {
@@ -29,9 +30,8 @@ namespace RecipeAPI
             });
 
             services.AddDbContext<RecipesContext>(options =>
-                   options.UseInMemoryDatabase("RecipeList"));
+                   options.UseSqlServer(Configuration.GetConnectionString("RecipesContext")));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

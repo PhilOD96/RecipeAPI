@@ -26,3 +26,17 @@ C:\Users\T450 i5\CA2\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.c
 C:\Users\T450 i5\CA2\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.RazorAssemblyInfo.cache
 C:\Users\T450 i5\CA2\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.RazorAssemblyInfo.cs
 C:\Users\T450 i5\CA2\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\bin\Debug\netcoreapp2.2\RecipeAPI.deps.json
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\bin\Debug\netcoreapp2.2\RecipeAPI.runtimeconfig.json
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\bin\Debug\netcoreapp2.2\RecipeAPI.runtimeconfig.dev.json
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\bin\Debug\netcoreapp2.2\RecipeAPI.dll
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\bin\Debug\netcoreapp2.2\RecipeAPI.pdb
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.csprojAssemblyReference.cache
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.csproj.CoreCompileInputs.cache
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.RazorAssemblyInfo.cache
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.RazorAssemblyInfo.cs
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.AssemblyInfoInputs.cache
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.AssemblyInfo.cs
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.dll
+C:\Users\Phil\Desktop\Proj\RecipeAPI\API\RecipeAPI\obj\Debug\netcoreapp2.2\RecipeAPI.pdb
