@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using RecipeAPI.Models;
+using System;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace RecipeAPI.Controllers
@@ -29,12 +30,12 @@ namespace RecipeAPI.Controllers
             return entries;
         }
 
-        [HttpGet("recipesID/{Recipe_id}", Name = "GetEntry")]
-        // GET api/recipes/recipeID/1
-        public IActionResult GetEntry(int _ID)
+        [HttpGet("recipeName/{name}", Name = "GetNameEntry")]
+        // GET api/recipes/recipeName/Lasagna
+        public IActionResult GetNameEntry(string name)
         {
             // LINQ query, find matching entry for number
-            var entry = _context.Recipes.FirstOrDefault(e => e.Recipe_id == _ID);
+            var entry = _context.Recipes.FirstOrDefault(e => e.RecipeName.ToUpper() == name.ToUpper());
             if (entry == null)
             {
                 return NotFound();
