@@ -11,11 +11,14 @@ import com.example.phil.bladerunner.R;
 import com.example.phil.bladerunner.models.Recipes;
 
 import java.util.ArrayList;
+import java.lang.*;
 
 public class RecipeAdapter extends ArrayAdapter<Recipes> {
     private static class ViewHolder {
         TextView id;
         TextView name;
+        TextView difficulty;
+        TextView duration;
     }
 
     public RecipeAdapter(Context context, ArrayList<Recipes> recipes) {
@@ -33,16 +36,19 @@ public class RecipeAdapter extends ArrayAdapter<Recipes> {
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.item_recipe, parent, false);
 
-            viewHolder.id = (TextView) convertView.findViewById(R.id.value_recipe_id);
+            viewHolder.duration= (TextView) convertView.findViewById(R.id.label_duration);
             viewHolder.name = (TextView) convertView.findViewById(R.id.value_recipe_name);
+            viewHolder.difficulty = (TextView) convertView.findViewById(R.id.difficulty);
 
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        viewHolder.id.setText(recipe.getRecipeId());
+
         viewHolder.name.setText(recipe.getRecipeName());
+        viewHolder.difficulty.setText(recipe.getRecipeDifficulty());
+
 
         return convertView;
     }

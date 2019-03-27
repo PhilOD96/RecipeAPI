@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BladeRunner</string>
+    <string name="label_recipe_name" translatable="false">Recette</string>
+    <string name="label_recipe_id" translatable="false">" Recette"</string>
+    <string name="duration" translatable="false">Difficulté</string>
+    <string name="difficulty" translatable="false">" Difficulté"</string>
+</resources>

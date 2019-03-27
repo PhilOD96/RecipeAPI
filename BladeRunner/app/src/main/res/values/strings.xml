@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">BladeRunner</string>
+    <string name="app_name" translatable="true">BladeRunner</string>
 
-    <string name="label_recipe_id">Recipe Id</string>
-    <string name="label_recipe_name">Recipe Name : </string>
+    <string name="label_recipe_id" translatable="true">Recipe Id</string>
+    <string name="label_recipe_name" translatable="true">Recipe Name : </string>
+    <string name="difficulty" translatable="true">Difficulty</string>
+    <string name="duration" translatable="true">Duration : </string>
 </resources>

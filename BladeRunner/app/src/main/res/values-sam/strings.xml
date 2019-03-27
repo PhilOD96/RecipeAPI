@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_recipe_name" translatable="false">اسم الوصفة</string>
+    <string name="label_recipe_id" translatable="false">شفرة عداء</string>
+    <string name="difficulty" translatable="false">شفرة عداء</string>
+    <string name="duration" translatable="false">شفرة عداء</string>
+</resources>

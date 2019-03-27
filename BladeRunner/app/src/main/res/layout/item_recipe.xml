@@ -12,23 +12,9 @@
 
 
     <TextView
-            android:id="@+id/label_recipe_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_recipe_id" />
-
-    <TextView
-            android:id="@+id/value_recipe_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/value_recipe_name"
-            android:layout_alignTop="@+id/label_recipe_id" />
-
-    <TextView
             android:id="@+id/label_recipe_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/label_recipe_id"
             android:layout_marginTop="12dp"
             android:text="@string/label_recipe_name"
         android:textSize="24dp"/>
@@ -41,4 +27,24 @@
             android:layout_marginLeft="12dp"
             android:layout_toRightOf="@id/label_recipe_title"
         android:textSize="24dp"/>
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difficulty"
+        android:layout_below="@+id/label_recipe_title"
+        />
+
+    <TextView
+        android:id="@+id/label_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/value_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/value_recipe_name"
+        />
 </RelativeLayout>
