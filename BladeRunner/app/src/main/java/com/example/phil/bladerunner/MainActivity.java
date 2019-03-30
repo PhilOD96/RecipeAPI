@@ -2,10 +2,11 @@ package com.example.phil.bladerunner;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.SearchView;
+import android.widget.EditText;
 
 import com.example.phil.bladerunner.adapters.ListViewAdapter;
 import com.example.phil.bladerunner.adapters.RecipeAdapter;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     // Declare Variables
 
     ListViewAdapter adapter;
-    SearchView editsearch;
+    EditText editSearch;
     Recipes[] recipeNameList;
     ArrayList<Recipes> arraylist = new ArrayList<Recipes>();
 
@@ -39,37 +40,56 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        EditText theFilter = (EditText) findViewById(R.id.simpleSearchView);
 
+        recipeList = (ListView) findViewById(R.id.list_recipes);
+        editSearch = (EditText) findViewById(R.id.simpleSearchView);
         getRecipes();
         recipeNameList = new Recipes[]{};
-        recipeList = (ListView) findViewById(R.id.list_recipes);
 
-        for (int i =0; i < recipeNameList.length; i ++){
 
-            //Recipes r =new Recipes();
-            //arraylist.add(r);
-        }
 
         adapter = new ListViewAdapter(this,arraylist);
 
         recipeList.setAdapter(adapter);
 
-        editsearch = (SearchView) findViewById(R.id.simpleSearchView);
-        //editsearch.setOnQueryTextListener((SearchView.OnQueryTextListener) this);
+        editSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if(s.toString().equals("")){
+                    getRecipes();
+                }
+                else{
+                    searchItem(s.toString());
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
 
     }
 
-    public boolean onQueryTextSubmit(String query) {
+    public void searchItem(String itemToSearch){
 
-        return false;
+        for(Recipes item:recipeNameList){
+            if(itemToSearch != item.getRecipeName()){
+                arraylist.remove(item);
+            }
+        }
+
+        adapter.notifyDataSetChanged();
     }
 
-    public boolean onQueryTextChange(String newText) {
-        String text = newText;
-        adapter.filter(text);
-        return false;
-    }
 
     public void getRecipes() {
         List<Header> headers = new ArrayList<Header>();

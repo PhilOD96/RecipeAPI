@@ -16,7 +16,7 @@
         android:max="100"
         android:indeterminate="true"
         android:visibility="gone" />
-    <SearchView
+    <EditText
         android:id="@+id/simpleSearchView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
